@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(./images/mountain-3374074_1920.jpg);
+    background-position: center;
+    background-size:cover;
+    transition:.3s ease-in-out;
+}
+body.day{ 
+    background: url(./images/mountain-3374074_1920.jpg);
+    background-position: center;
+    background-size:cover;
+    transition:.3s ease-in-out;
+    color:#000;
+}
+body.dark{
+    background: url(./images/architecture-1854220_1920.jpg);
+    background-position: center;
+    background-size:cover; 
+}
+.dark input{
+    background-color:#555;
+    color:#fff;
+}
+.dark .busca button img{
+    background-color:#555;
+}
+.but{
+    display:flex;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+.mode{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+.mode img{
+   width:8%; 
+   border-radius: 30px;
+   transition:.2s;
+}
+.dark .mode img{
+    filter:invert(100%)
+}
+.mode img:hover{
+    box-shadow: 2px 2px 2px 2px #777;
+}
+h1 {
+    color: #fff;
+    margin: 20px 0;
+    font-size:38px;
+    text-align:left;
+    text-shadow:3px 3px 3px #777;
+}
+p{
+    margin-bottom:20px;
+    font-size:18px;
+    color:#fff
+}
+.dark input::placeholder{
+    color:#fff;
+}
+.busca {
+    display: flex;
+    width: 300px;
+    position:relative;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0; 
+}
+.busca button {
+    position:absolute;
+    font-size: 15px;
+    border: none;
+    background:none;
+    border-radius: 5px;
+    cursor: pointer;
+    right:-10px;
+    top:10px;
+}
+.busca button img{
+    width:30%;
+    background-color: #FFF;
+}
+.aviso img {
+    width:15%;
+    display:none;
+}
+.aviso{
+    display:flex;
+    justify-content: center;
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+}
+.info .temp {
+    flex:1;
+    text-align: center;
+}
+.info .vento {
+    flex:1;
+    text-align: center;
+}
+.infos {
+    display:flex;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #b2b2b2;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+.tempIn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:20px;
+}
+.tempMax,
+.tempMin{
+    text-align: center;
+    color:#fff;
+}
+.tempLeft,
+.tempRight{
+    flex:1;
+    justify-content:center;
+}
+.tempTitulos{
+    color: #b2b2b2;
+    font-size: 16px;
+    text-align: center;
+}
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 16px;
+    text-shadow: 2px 2px 2px #777;
+}
+footer a{
+    color:#fff;
+    transition:.3s ease-in-out;
+    
+}
